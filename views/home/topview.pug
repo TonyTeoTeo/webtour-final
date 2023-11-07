@@ -1,0 +1,29 @@
+section.top-view 
+    .container 
+        .top-list 
+            .top-left 
+                img#img-top(onclick='changeImage()' src='./images/img1.png' alt='review-tour')
+            .top-right
+                .right-where 
+                    h3.where-title Where in the world :
+                    span.locationn Asia  /  Thailand  /  Bangkok
+                .right-review 
+                    .right-star 
+                        img(src='./images/star.png', alt='tour-star')
+                        span.right-count 4.8
+                        span.left-count (122 reviews)
+                span.Scare Sacred & Religious Sites · Shopping Malls · Gift & Specialty Shops        
+                h4.city-angle City of Angels
+                p.paraghraph Enjoy cultural, historical, and culinary exploration during your holiday in Bangkok, the capital of Thailand and the most populous city in the country. With over 8 million residents, Bangkok remains a sprawling metropolitan
+                span.last-time In your trip Sep 28 - Oct 1
+    script.
+        var index1 = 1;
+        changeImage = function(){
+            var imgs=["https://images.unsplash.com/photo-1510379872535-9310dc6fd6a7?auto=format&fit=crop&q=80&w=1170&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", "https://plus.unsplash.com/premium_photo-1693238778029-567eec3dd881?auto=format&fit=crop&q=80&w=1170&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", "https://images.unsplash.com/photo-1578515756945-678323107515?auto=format&fit=crop&q=80&w=1170&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", "https://images.unsplash.com/photo-1566830646346-908d87490bba?auto=format&fit=crop&q=80&w=1170&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", "https://images.unsplash.com/photo-1520524155947-ca0c3d96ec03?auto=format&fit=crop&q=80&w=1170&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", "https://images.unsplash.com/photo-1578167635648-df79e1565908?auto=format&fit=crop&q=80&w=1170&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D","https://images.unsplash.com/photo-1578167635857-3c2713865774?auto=format&fit=crop&q=80&w=1170&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D","https://images.unsplash.com/photo-1584293938526-76d5ceac45f1?auto=format&fit=crop&q=80&w=1170&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", "https://images.unsplash.com/photo-1618889128235-93807ca6b114?auto=format&fit=crop&q=80&w=1170&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"];
+            document.getElementById('img-top').src = imgs[index1];
+            index1++;
+            if(index1==9){
+                index1 = 0;
+            }
+        }
+        setInterval(changeImage,1500);

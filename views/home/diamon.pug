@@ -1,0 +1,12 @@
+section.diamon 
+    .container 
+        h2.heading Hidden gems in Bangkok
+        .diamon-list 
+            each val in ['https://images.unsplash.com/photo-1528181304800-259b08848526?auto=format&fit=crop&q=80&w=1170&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', 'https://plus.unsplash.com/premium_photo-1673283243381-ac2e9b686182?auto=format&fit=crop&q=80&w=1287&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', 'https://images.unsplash.com/photo-1578507126016-337583c6dddb?auto=format&fit=crop&q=80&w=1287&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', 'https://images.unsplash.com/photo-1508009603885-50cf7c579365?auto=format&fit=crop&q=80&w=1050&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D']
+                .diamon-item 
+                    .diamon-image 
+                        img(src= val, alt="")
+                        .diamon-content
+                            h3.diamon-title Bangkok Trip
+                            span.diamon-span 27 Sep, 2020
+        a.button(href="#").diamon-all Explore All
